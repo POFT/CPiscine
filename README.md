@@ -10,17 +10,17 @@ Para mostrar o caractere, deve usar a função write da seguinte maneira:
     write(1, &c, 1);
 
 
-#Solucao
-1. Abrir um arquivo C no Vim:
+#Resolution
+1. Create a file:
   
         vim ft_putchar.c
+    Vim é um editor de texto, usado para programar e editar ficheiros de texto no terminal (linha de comandos).
+    Como funciona (modo básico)?
+        Modo Normal: para navegar, copiar, colar, apagar texto, etc.
+        Modo Inserção: para escrever texto (como num editor normal).
+        Modo Comando: para salvar, sair, procurar, substituir, etc.
 
-2. Modos do Vim:
-  Modo Normal: onde você navega e dá comandos (modo padrão ao abrir).
-  Modo Inserção: para digitar código. Pressione i para entrar.
-  Modo Comando: para salvar, sair, etc. Pressione [Esc]: para entrar.
-
-3. Escrever código:
+3. Write code:
   (:Stdheader or F1) The 42 header - a.k.a start a file with style
   Pressione i para entrar no modo inserção.
   Escreva seu código C normalmente:
@@ -59,7 +59,7 @@ Por isso, o carácter 'a' é enviado para o terminal e aparece na tela.
 | `&c`   | O **endereço** da variável na memória |
 
 
-4. Salvar e sair:
+4. Save and Exit:
   Pressione Esc para voltar ao modo normal.
   
           Para salvar: :w + Enter
@@ -67,13 +67,17 @@ Por isso, o carácter 'a' é enviado para o terminal e aparece na tela.
           Para salvar e sair juntos: :wq + Enter
           Para sair sem salvar: :q! + Enter
 
-5. Compilar o código C pelo terminal (Norm):
+5. Compile C code via terminal:
 
           cc -Wall -Wextra -Werror ft_putchar.c
+    > A Moulinette compila com as textitflags -Wall -Wextra -Werror, e utiliza cc
 
-6. Depois de olhar os ficheiros (ls) podemos ver um "a.out", vamos correr o comando local (print's the test):
+6. View created files (ls):
+    a.out  ft_putchar.c
+Para executar o programa e ver o resultado (como imprimir o caractere 'a' no terminal), usas:
   
         ./a.out
-
+    ./ significa "diretório atual"
+    a.out é o nome do programa executável
 
 
