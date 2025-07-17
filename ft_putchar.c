@@ -6,18 +6,19 @@
 /*   By: pmiguel2 <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 19:44:18 by pmiguel2          #+#    #+#             */
-/*   Updated: 2025/07/16 19:46:56 by pmiguel2         ###   ########.fr       */
+/*   Updated: 2025/07/17 09:17:26 by pmiguel2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putchar(char c) {
-        write(1,&c,1);
+void    ft_putchar(char c)
+{
+        write(1, &c, 1);
 }
 
-int main() {
+int     main(void)
+{
         ft_putchar('a');
-        return 0;
+        return (0);
 }
-
