@@ -1,7 +1,5 @@
 # CPiscine
-Fundamentals C
-++++++++++++++++++++++++++++++++++++++++++++++++++=
-Exercício 00: ft_putchar
+Fundamentals C / Exercício 00: ft_putchar    
 Escreva uma função que mostre o caractere passado como parâmetro.
 Deve ser prototipada da seguinte maneira:
     
