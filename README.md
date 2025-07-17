@@ -14,7 +14,8 @@ Para mostrar o caractere, deve usar a função write da seguinte maneira:
 
 #Solucao
 1. Abrir um arquivo C no Vim:
-  vim ft_putchar.c
+  
+        vim ft_putchar.c
 
 2. Modos do Vim:
   Modo Normal: onde você navega e dá comandos (modo padrão ao abrir).
@@ -28,30 +29,33 @@ Para mostrar o caractere, deve usar a função write da seguinte maneira:
 
         #include <unistd.h>
         
-        void ft_putchar(char c) {
-            write(1, &c, 1);
+        void    ft_putchar(char c)
+        {
+                write(1, &c, 1);
         }
         
-        int main() {
-            ft_putchar('a');
-            return 0;
+        int     main(void)
+        {
+                ft_putchar('a');
+                return (0);
         }
 
 
 4. Salvar e sair:
   Pressione Esc para voltar ao modo normal.
   
-  Para salvar: :w + Enter
-  Para sair: :q + Enter
-  Para salvar e sair juntos: :wq + Enter
-  Para sair sem salvar: :q! + Enter
+          Para salvar: :w + Enter
+          Para sair: :q + Enter
+          Para salvar e sair juntos: :wq + Enter
+          Para sair sem salvar: :q! + Enter
 
 5. Compilar o código C pelo terminal:
-  cc -Wall -Wextra -Werror ft_putchar.c
 
-6. Depois de olhar os ficheiros (ls) podemos ver um "a.out", vamos correr o comando local:
-  ./a.out
-  (print's the test)
+          cc -Wall -Wextra -Werror ft_putchar.c
+
+6. Depois de olhar os ficheiros (ls) podemos ver um "a.out", vamos correr o comando local (print's the test):
+  
+        ./a.out
 
 
 
